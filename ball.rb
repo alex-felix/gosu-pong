@@ -38,6 +38,7 @@ class Ball
 
     if (@player1.y > (@y + @image.height)) ||
         ((@player1.y + @player1.image.height) < @y)
+        # Do not touch x
     else
       if @x <= @player1.x + @image.width
         @angle += 270
